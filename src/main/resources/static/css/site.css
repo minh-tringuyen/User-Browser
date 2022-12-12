@@ -1,0 +1,8 @@
+body {
+    font-size: .8em !important;
+}
+
+#eventLogListContainer {
+    height: 200px; 
+    overflow: auto
+}

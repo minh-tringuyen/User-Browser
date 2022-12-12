@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        {{>header.frag}}
+        <style type="text/css">
+            #mainHeader{
+                
+                background-color: lightblue;
+                color: white;
+                padding:10px;
+            }
+        </style>
+        <style type="text/css">
+            #mainContainer{
+              
+            }
+        </style>
+    </head>
+    <body>
+        <header id="mainHeader">
+            <h1><center>{{title}}</center></h1>
+            <div>
+                <h2>Search Form</h2>
+                <form action="/">
+                    First Name: <input type="text" id="firstName" name="firstName"/><br><br>
+                        Last Name: <input type="text" id="lastName" name="lastName"/><br>
+                        <br>
+                        <input type="submit" value="search">
+                </form>
+            </div>
+        </header>
+        <div id="mainContainer" class="container">
+            <!--<h1>{{title}}</h1>-->
+            <br><!-- comment -->
+            
+            <!--<div>
+                <h2>Search Form</h2>
+                <form action="/">
+                    First Name: <input type="text" id="firstName" name="firstName"/><br><br>
+                        Last Name: <input type="text" id="lastName" name="lastName"/><br>
+                        <br>
+                        <input type="submit" value="search">
+                </form>
+            </div>-->
+            
+            {{#hasData}}
+            <br><!--  -->
+            <h2>Search Returned ({{count}}) for term {{searchTerm}} {{searchTerm2}}</h2>
+            
+            <script>
+            $(document).ready( function () {
+                $('#fbuserTable').DataTable({scrollX:true});
+            } );
+            </script>
+            
+            <table class="table" id="fbuserTable">
+                <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>currentCity</th>
+                <th>currentState</th>
+                <th>currentCountry</th>
+                <th>birthCity</th>
+                <th>birthState</th>
+                <th>birthCountry</th>
+                <th>relationshipStatus</th>
+                <th>occupancy</th>
+                <th>accountCreated</th>
+                <th>email</th>
+                <th>birthDate</th>
+                </thead>
+                <tbody>
+                    
+                    {{#fbusers}}
+                    
+                <tr>
+                    <td>{{firstName}}</td>
+                    <td>{{lastName}}</td>
+                    <td>{{gender}}</td>
+                    <td>{{currentCity}}</td>
+                    <td>{{currentState}}</td>
+                    <td>{{currentCountry}}</td>
+                    <td>{{birthCity}}</td>
+                    <td>{{birthState}}</td>
+                    <td>{{birthCountry}}</td>
+                    <td>{{relationshipStatus}}</td>
+                    <td>{{occupancy}}</td>
+                    <td>{{accountCreated}}</td>
+                    <td>{{email}}</td>
+                    <td>{{birthDate}}</td>
+                    </tr>
+                {{/fbusers}}
+                </tbody>
+            </table>
+            
+            {{/hasData}}
+            <br>
+            <footer>
+                Generated {{generated}}<br>
+            </footer>
+
+        </div>
+    </body>
+</html>
