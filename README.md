@@ -7,7 +7,7 @@ Sample output of the browser below.
 
 Default page:
 
-![image (1)](https://user-images.githubusercontent.com/117843148/208457192-5d4c92a8-445a-4a76-9e98-4ef351689d2f.png)
+![image (7)](https://user-images.githubusercontent.com/117843148/208460265-607209a4-38a8-4c55-8f61-34671052de17.png)
 
 Normal user search:
 
