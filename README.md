@@ -13,7 +13,7 @@ Normal user search:
 
 ![image (2)](https://user-images.githubusercontent.com/117843148/208457359-85a3ee37-1a20-4c1c-b7e0-89dfb0f4eeac.png)
 
-![image (3)](https://user-images.githubusercontent.com/117843148/208457480-077ab9bc-1a78-46d9-a0f8-70552f61ca94.png)
+![image (9)](https://user-images.githubusercontent.com/117843148/208477594-d5eade17-1a7d-4b95-9a2e-9d1f21433126.png)
 
 Wild card search of "mic*l le":
 
